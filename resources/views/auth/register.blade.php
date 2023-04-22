@@ -69,10 +69,12 @@
                                     <div class="form-group">
                                         <label for="name" class="form-label">Name</label>
                                         <input type="text" class="form-control" id="name" name="name" placeholder="johndoe" aria-describedby="register-username" tabindex="1" autofocus />
+                                        <span style="color: #c50000;">{{$errors->first('name')}}</span>
                                     </div>
                                     <div class="form-group">
                                         <label for="email" class="form-label">Email</label>
                                         <input type="text" class="form-control" id="email" name="email" placeholder="john@example.com" aria-describedby="register-email" tabindex="2" />
+                                        <span style="color: #c50000;">{{$errors->first('email')}}</span>
                                     </div>
 
                                     <div class="form-group">
@@ -84,6 +86,7 @@
                                                 <span class="input-group-text cursor-pointer"><i data-feather="eye"></i></span>
                                             </div>
                                         </div>
+                                        <span style="color: #c50000;">{{$errors->first('password')}}</span>
                                     </div>
 
                                     <div class="form-group">
@@ -95,6 +98,7 @@
                                                 <span class="input-group-text cursor-pointer"><i data-feather="eye"></i></span>
                                             </div>
                                         </div>
+                                        <span style="color: #c50000;">{{$errors->first('password_confirmation')}}</span>
                                     </div>
                                     <div class="form-group">
                                         <div class="custom-control custom-checkbox">
